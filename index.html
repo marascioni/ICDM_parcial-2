@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon16_naranja.png"
+      type="image/x-icon"
+    />
+    <!-- Tipografía de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rascioni Miguel-DWN2CV-2022</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+<!-- CSS con modificaciones propias -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="navbar navbar-light navbar-expand-lg bg-orange">
+          <div class="container-fluid">
+            <a id="logo" class="navbar-brand ms-5" href="#"
+              ><img src="./images/Logo_final.png" alt="Logo de SunElectric"
+            /></a>
+
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#barra"
+              aria-controls="barra"
+              aria-expanded="false"
+              aria-label="Boton hamburguesa"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="barra" class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#energia">Energía solar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#clasificacion">Clasificación</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#video">Cómo funciona</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Sección de Banner de presentación -->
+      <section>
+        <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/banner01.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/banner02.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/banner03.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/banner04.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>            
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>            
+          </button>
+        </div>
+
+      </section>
+      <!-- Sección de la nota principal -->
+      <section id="energia" class="notaPpal mt-5">
+        <h1 class="display-3">Energía solar</h1>
+        <img
+          class="mx-2 float-start"
+          src="./images/definicion.png"
+          alt="Icono de definición"
+        />
+        <h2 class="display-4 mx-3">Definición</h2>
+        <p>
+          La energía solar es una energía renovable e inagotable obtenida a
+          partir de laradiación electromagnética del sol. Los paneles solartes
+          están formados por grupos celdas que transforman la luz (fotones) en
+          energía eléctrica (electrones). Esto se consigue gracias a la
+          instalación depaneles solares fotovoltaicos, que cuentan con celdas de
+          silicio que transforman la luz y calor del sol en energía eléctrica.
+        </p>
+        <img
+          class="mx-2 float-start"
+          src="./images/diferencias.png"
+          alt="Icono de diferencias"
+        />
+        <h2 class="display-4">Diferencias</h2>
+        <p>
+          Aunque todos los tipos de paneles cumplen la misma función, existen
+          importantes diferencias entre ellos en estas tres áreas.
+        </p>
+
+        <div class="accordion container-fluid container-width mb-5" id="colapsable" >
+          <div class="accordion-item">
+            <!-- header- siempre visible -->
+            <div class="accordion-header" id="aspecto">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#idAspecto"
+                aria-expanded="true"
+                aria-controls="idAspecto"
+              >
+                <h3>Aspecto</h3>
+              </button>
+            </div>
+            <!-- contenido del item -->
+            <div
+              id="idAspecto"
+              class="accordion-collapse collapse"
+              aria-labelledby="aspecto"
+              data-bs-parent="#colapsable"
+            >
+              <div class="accordion-body">
+                <p>
+                  Puede describirse en función de su color y número de celdas.
+                  Los paneles solares <strong>monocristalinos</strong> tienen
+                  celdas negras con esquinas recortadas, y la mayoría de los
+                  paneles tienen 60 o 72 celdas solares de silicio. Los últimos
+                  diseños usan 120 o 144 celdas partidas o half-cell que
+                  aumentan la eficiencia. Los paneles solares
+                  <strong>policristalinos</strong> tienen celdas azules con
+                  esquinas afiladas. Suelen estar disponibles con 60 o 72 celdas
+                  (o 120 o 144 celdas partidas o half-cell en los modelos más
+                  recientes). Los paneles solares de
+                  <strong>capa fina</strong> tienen una superficie uniforme con
+                  capas de material fotovoltaico, en lugar de celdas solares
+                  separadas. Su color depende de la composición del material, y
+                  puede encontrar paneles de <strong>capa fina</strong> negros,
+                  azules o incluso grises.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <!-- header- siempre visible -->
+            <div class="accordion-header" id="costo">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#idCosto"
+                aria-expanded="false"
+                aria-controls="idCosto"
+              >
+                <h3>Costo</h3>
+              </button>
+            </div>
+            <!-- contenido del item -->
+            <div
+              id="idCosto"
+              class="accordion-collapse collapse"
+              aria-labelledby="costo"
+              data-bs-parent="#colapsable"
+            >
+              <div class="accordion-body">
+                <p>
+                  El precio dependerá de la marca y el modelo del panel. Hay que
+                  tener en cuenta que el costo total de la instalación solar
+                  incluirá componentes como el inversor, el bastidor o el
+                  cableado. Sin embargo, el costo de los paneles solares en sí,
+                  puede clasificarse de la siguiente manera:
+                </p>
+                <ul>
+                  <li><strong>Monocristalinos</strong>: Precio más alto</li>
+                  <li><strong>Policristalinos</strong>: Precio intermedio</li>
+                  <li>De <strong>capa fina</strong>: Precio más bajo</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <!-- header- siempre visible -->
+            <div class="accordion-header" id="eficiencia">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#idEficiencia"
+                aria-expanded="false"
+                aria-controls="idEficiencia"
+              >
+                <h3>Eficiencia</h3>
+              </button>
+            </div>
+            <!-- contenido del item -->
+            <div
+              id="idEficiencia"
+              class="accordion-collapse collapse"
+              aria-labelledby="eficiencia"
+              data-bs-parent="#colapsable"
+            >
+              <div class="accordion-body">
+                <p>
+                  Estos conceptos están estrechamente relacionados, ya que una
+                  mayor eficiencia significa más vatios con la luz solar
+                  disponible. Sin embargo, también hay que tener en cuenta las
+                  dimensiones de los paneles solares, ya que un producto más
+                  grande tiene más superficie para recoger la luz solar.
+                  Suponiendo que se comparen paneles solares de tamaños
+                  similares, se puede esperar la siguiente clasificación en
+                  cuanto a eficiencia y potencia:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Monocristalino:</strong> Eficiencia máxima,
+                    normalmente superior al 19%
+                  </li>
+                  <li>
+                    <strong>Policristalino:</strong> Eficiencia media,
+                    normalmente del 15-17%
+                  </li>
+                  <li>
+                    De <strong>capa fina</strong>: La eficiencia más baja,
+                    normalmente por debajo del 15%
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+        <img
+          class="mx-2 float-start"
+          src="./images/composicion.png"
+          alt="Icono de composicion"
+        />
+        <h2 class="display-4">De qué están hechos</h2>
+        <p>
+          Los paneles <strong>policristalinos</strong> como los
+          <strong>monocristalinos</strong> están hechos de obleas de silicio
+          cristalino. Sin embargo, la estructura microscópica de esos cristales
+          es diferente en cada tipo de panel:
+        </p>
+        <div class="container">
+          <div class="row">
+            <div class="card-group mb-5">
+              <div class="col col-sm-12 col-xl-4">
+                <div class="card border-violet mx-3">
+                  <div class="card-body">
+                    <h5 class="card-title"><strong>Monocristalinos</strong></h5>
+                    <p class="card-text">
+                      Se fabrican a partir de celdas fotovoltaicas cortadas de
+                      un solo cristal de silicio puro. Se trata de un proceso de
+                      fabricación avanzado, que es una de las razones
+                      principales por las que los paneles
+                      <strong>monocristalinos</strong> tienen precios más altos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-sm-12 col-xl-4">
+                <div class="card border-violet mx-3">
+                  <div class="card-body">
+                    <h5 class="card-title"><strong>Policristalinos</strong></h5>
+                    <p class="card-text">
+                      Se fabrican a partir de múltiples fragmentos de silicio
+                      cristalino que se funden durante el proceso de
+                      fabricación. Su proceso de fabricación es más sencillo, ya
+                      que no es necesario cultivar cuidadosamente un solo
+                      cristal de silicio. Esto conlleva un menor coste, pero
+                      también una menor eficiencia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-sm-12 col-xl-4">
+                <div class="card border-violet mx-3">
+                  <div class="card-body">
+                    <h5 class="card-title"><strong>Capa fina</strong></h5>
+                    <p class="card-text">
+                      No utilizan celdas de cristal de silicio. En su lugar,
+                      utilizan finas capas de material fotovoltaico. Las
+                      composiciones químicas más comunes son el seleniuro de
+                      cobre, indio y galio (CIGS), el teluro de cadmio (CdTe) y
+                      el silicio amorfo (a-Si).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          class="mx-2 float-start"
+          src="./images/elegir.png"
+          alt="Icono como elegir"
+        />
+        <h2 class="display-4">Cómo elegirlos</h2>
+        <p>
+          Los paneles solares <strong>monocristalinos</strong> suelen
+          considerarse los «mejores» debido a su mayor eficiencia, pero
+          cualquiera de los tres tipos de paneles solares puede alcanzar un gran
+          rendimiento cuando se usa en las aplicaciones adecuadas.
+        </p>
+        <div class="container">
+          <div class="row">
+            <div class="card-group mb-5">
+              <div class="col col-sm-12 col-md-6">
+                <div class="card border-violet mx-3">
+                  <div class="card-body">
+                    <p class="card-text">
+                      La eficiencia es sólo uno de los parámetros de
+                      rendimiento. Los paneles de
+                      <strong>capa fina</strong> no tienen la mejor eficiencia,
+                      pero su bajo peso y reducido grosor los hacen viables en
+                      aplicaciones en las que los otros tipos no son prácticos.
+                      Si quieres maximizar la producción de electricidad conun
+                      espacio limitado, los <strong>monocristalinos</strong> son
+                      la opción recomendada. Cuando el espacio no es una
+                      limitaciónpara tu sistema solar, también puedes considerar
+                      los <strong>policristalinos</strong>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-sm-12 col-md-6">
+                <div class="card border-violet mx-3">
+                  <div class="card-body">
+                    <p class="card-text">
+                      También se recomiendan cuando se quiere mantener el
+                      presupuesto lo más bajo posible. Los de
+                      <strong>capa fina</strong> no se recomiendan generalmente
+                      para techos. Dado que su eficiencia es baja, es necesario
+                      cubrir mucha superficie. Los de película fina son
+                      excelentes para los vehículos de paseo y vida al aire
+                      libre, ya que son más ligeros y portátiles. También puede
+                      encontrar paneles solares de película fina con diseños
+                      flexibles o adhesivos, que pueden utilizarse en
+                      superficies que no son adecuadas para los otros dos tipos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mb-5">
+        <div class="container-fluid">
+          <div id="galeria" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1300" >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100"
+                  src="./images/landscape 01.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="./images/landscape 02.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="./images/landscape 03.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="./images/landscape 04.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#galeria"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+              </span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#galeria"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true">
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Sección con la clasificación de los paneles solares -->
+      <section id="clasificacion" class="clasificacion pb-5 pt-5">
+        <h1 class="display-3 ms-5">Clasificación</h1>
+        <p>
+          Los paneles solarescaptan la energía que procede del solpara
+          convertirla en corriente alterna apta para alimentar los distintos
+          equipos del hogar. Es importante tener en cuenta que, un panel solar,
+          por sí solo, valdrá de poco o de nada. Esto es así porque las placas
+          son solo uno de los componentes necesarios para una instalación solar,
+          además, necesitará un inversor y, según el uso que se le quiera dar,
+          baterías de almacenamiento.
+        </p>
+
+        <div class="Generacion">
+          <h2 class="display-5 mt-4">Primera Generación</h2>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <picture>
+                    <!-- mobile -->
+                    <source
+                      media="(max-width: 480px)"
+                      srcset="./images/monocristalinos_mb.jpg"
+                    />
+                    <!-- tablet + PC -->
+                    <source
+                      media="(min-width: 481px)"
+                      srcset="./images/monocristalinos.jpg"
+                    />
+                    <img
+                      class="card-img-top"
+                      src="./images/monocristalinos.jpg"
+                      alt="Panel solar monocristalinos"
+                    />
+                  </picture>
+                  <h4 class="card-title mt-2">Monocristalinos (Mono-SI)</h4>
+                  <ul>
+                    <li>Aspecto oscuro</li>
+                    <li>Alta dureza</li>
+                    <li>Indice de eficiencia alta</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <picture>
+                    <!-- mobile -->
+                    <source
+                      media="(max-width: 480px)"
+                      srcset="./images/policristalinos_mb.jpg"
+                    />
+                    <!-- tablet + PC -->
+                    <source
+                      media="(min-width: 481px)"
+                      srcset="./images/policristalinos.jpg"
+                    />
+                    <img
+                      class="card-img-top"
+                      src="./images/policristalinos.jpg"
+                      alt="Panel solar policristalinos"
+                    />
+                  </picture>
+                  <h4 class="card-title mt-2">Policristalinos (Poly-SI)</h4>
+                  <ul>
+                    <li>Aspecto azul</li>
+                    <li>Se fabrica con silicio fundido</li>
+                    <li>Precio más bajo, menor eficiencia</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="Generacion">
+          <h2 class="display-5 mt-4">Segunda Generación</h2>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <picture>
+                    <!-- mobile -->
+                    <source
+                      media="(max-width: 480px)"
+                      srcset="./images/capaFina_mb.jpg"
+                    />
+                    <!-- tablet + PC -->
+                    <source
+                      media="(min-width: 481px)"
+                      srcset="./images/capaFina.jpg"
+                    />
+                    <img
+                      class="card-img-top"
+                      src="./images/capaFina.jpg"
+                      alt="Panel solar de capa fina"
+                    />
+                  </picture>
+
+                  <h4 class="card-title mt-2">
+                    Celdas de película fina (TFSC)
+                  </h4>
+
+                  <ul>
+                    <li>Son flexibles</li>
+                    <li>Ocupan mucho espacio</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <picture>
+                    <!-- mobile -->
+                    <source
+                      media="(max-width: 480px)"
+                      srcset="./images/silicioAmorfo_mb.jpg"
+                    />
+                    <!-- tablet + PC -->
+                    <source
+                      media="(min-width: 481px)"
+                      srcset="./images/silicioAmorfo.jpg"
+                    />
+                    <img
+                      class="card-img-top"
+                      src="./images/silicioAmorfo.jpg"
+                      alt="Panel solar de silicio amorfo"
+                    />
+                  </picture>
+
+                  <h4 class="card-title mt-2">
+                    Celdas de silicio amorfo (A-Si)
+                  </h4>
+
+                  <ul>
+                    <li>Utiliza tecnología de triple capa</li>
+                    <li>Indice de eficiencia bajo</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="Generacion">
+          <h2 class="display-5 mt-4">Tercera Generación</h2>
+          <picture>
+            <!-- mobile -->
+            <source
+              media="(max-width: 480px)"
+              srcset="./images/investigacion_mb.jpg"
+            />
+            <!-- tablet + PC -->
+            <source
+              media="(min-width: 481px)"
+              srcset="./images/investigacion.png"
+            />
+            <img src="./images/investigacion.png" alt="Imagen de laboratorio" />
+          </picture>
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mt-2">Celda biohíbrida</h4>
+                  <ul>
+                    <li>Emulan el proceso de fotosíntesis</li>
+                    <li>Conversión de energía más eficiente</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mt-2">Celda de teluro de cadmio</h4>
+                  <ul>
+                    <li>Costo de amortización más bajo</li>
+                    <li>Consume menos agua en su elebaración</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mt-2">Celda concentrada</h4>
+                  <ul>
+                    <li>Eficiencia elevada</li>
+                    <li>Requiere alineación perfecta con el sol</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección del video informativo -->
+      <section id="video" class="video mb-5 mt-5">
+        <h1 class="display-3 ms-5">Cómo funciona</h1>
+        <div class="ratio ratio-16x9 bg-success">
+          <iframe
+            src="https://www.youtube.com/embed/q5bMAz4NK0c"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- Sección de formulario de contacto -->
+      <section id="contacto" class="contacto bg-violet pt-3 pb-5">
+        <h1 class="display-3 ms-5">Contacto</h1>
+        <h2 class="ms-5">
+          Conoce nuestros productos, encuentra el que más se ajuste a tus
+          necesidades y comenza a ahorrar.
+        </h2>
+        <div class="row container-form mt-4">
+          <form action="sendMail.php" method="post">            
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingNombre" placeholder="Miguel" required minlength="3" />
+              <label for="floatingNombre">Nombre</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingApellido" placeholder="Rascioni" />
+              <label for="floatingApellido">Apellido</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="miguel.rascioni@davinci.edu.ar" required />
+              <label for="floatingInput">Email address</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="tel" class="form-control" id="floatingTel" placeholder="1151573313" />
+              <label for="floatingTel">Teléfono</label>
+            </div>
+            <div>
+              <label for="mensaje" class="form-label">Textarea:</label>
+              <textarea class="form-control" name="" id="" cols="30" rows="10" required ></textarea>
+            </div>
+            <div class="form-check form-switch">
+              <input type="checkbox" class="form-check-input" id="acepto" />
+              <label for="acepto" class="form-check-label"
+                >Acepto terminos y condiones</label
+              >
+            </div>
+            <div class="botones">
+              <input
+                type="reset"
+                value="reset"
+                class="btn btn-gral btn-cancel ms-3"
+              />
+              <input
+                type="submit"
+                value="enviar"
+                class="btn btn-gral btn-violet ms-3"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-orange">
+      <img
+        class="logoFooter"
+        src="./images/Logo_final.png"
+        alt="Logo de SunElectric"
+      />
+      <!-- URL de las home page de las redes sociales -->
+      <div class="redes">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><img src="./images/icon_facebook.png" alt="Logo de Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><img src="./images/icon_ig.png" alt="Logo de Instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/?lang=es"
+              ><img src="./images/icon_twitter.png" alt="Logo de Twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.whatsapp.com/?lang=es"
+              ><img src="./images/icon_wapp.png" alt="Logo de Whatsapp"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="mapaSitio">
+        <ul>
+          <li><a href="#logo">Home</a></li>
+          <li><a href="#energia">Energía solar</a></li>
+          <li><a href="#clasificacion">Clasificación</a></li>
+          <li><a href="#video">Cómo funciona</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <p>Interacción con Dispositivos Móbiles - DWN2CV - 2022</p>
+      <p>Rascioni, Miguel Angel</p>
+      <p>Todos los derechos reservados &copy 2022 - Rascioni Miguel</p>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
